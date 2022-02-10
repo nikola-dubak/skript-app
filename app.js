@@ -92,4 +92,4 @@ app.get("/", (request, response) => {
     response.sendFile("index.html", { root: "./dist" });
 });
 
-app.listen({ port: 7000 });
+app.listen({ port: process.env.PORT || 7000 });
